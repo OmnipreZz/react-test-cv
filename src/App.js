@@ -5,6 +5,10 @@ import views from './config/views';
 
 import appStore from './stores/AppStore';
 
+import Header from "./components/Header"
+import Sidebar from "./components/Sidebar"
+import Footer from "./components/Footer"
+
 import './scss/app.scss';
 
 class App extends Component {
@@ -17,7 +21,10 @@ class App extends Component {
     return (
       <Provider store={appStore}>
         <div className="App AppWrapper">
+          <Header />
+          <Sidebar />
           <MobxRouter />
+          <Footer />
         </div>
       </Provider>
     );

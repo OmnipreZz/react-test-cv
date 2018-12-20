@@ -1,5 +1,11 @@
-@import "./variables.scss";
-
-.App {
-  color: $red;
+.AppWrapper{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "nav content"
+    "footer footer";
+  grid-template-columns: 12.5em 1fr;
+  grid-template-rows: 3.75em 1fr 2.5em;
 }

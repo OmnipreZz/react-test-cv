@@ -3,19 +3,19 @@ import { Route } from 'mobx-router';
 
 
 import Jumbotron from '../components/Jumbotron';
-import Layout from '../components/Layout';
+import Project from '../components/Project';
 
 
 const views = {
 
-  jumbo: new Route({
+  home: new Route({
     path: '/',
     component: <Jumbotron />
   }),
 
-  home: new Route({
-    path: '/home',
-    component: <Layout />
+  project: new Route({
+    path: '/projet',
+    component: <Project />
   }),
 
 }
