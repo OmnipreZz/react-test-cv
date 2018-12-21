@@ -4,3 +4,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.Button {
+  display:none;
+}
+
+@media (max-width: 767px) {
+  .Button {
+    display: initial;
+  }
+}

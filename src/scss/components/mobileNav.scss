@@ -1,0 +1,16 @@
+.MobileNav {
+  position: absolute;
+  grid-area: content;
+  height: 100vh;
+  width: 60vw;
+  max-width: 16em;
+  background-color: red;
+  box-shadow: 2px 0px 5px gray;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.MobileNav.open {
+  transform: translateX(0);
+}
