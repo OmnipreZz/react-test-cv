@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import '../scss/components/jumbotron.scss';
+import '../scss/components/home.scss';
 
 
-class Jumbotron extends Component {
+class Home extends Component {
   render() {
     return (
-      <div className="Jumbotron">
-        <h1>Jumbotron</h1>
+      <div className="Home">
+        <h1>Home</h1>
         <p>
 
 Nisi quia accusamus dolores id. Blanditiis laudantium facere voluptas inventore iste consequatur. Rerum nihil ut consequuntur voluptatem. Ut consequatur reiciendis culpa vero maxime repudiandae tenetur voluptates.
@@ -36,4 +36,4 @@ Et aliquam totam quia sit perspiciatis. Ipsa deleniti rerum occaecati beatae aut
   }
 }
 
-export default Jumbotron;
+export default Home;

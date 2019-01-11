@@ -1,16 +1,48 @@
 .Header {
   grid-area: header;
   background-color: green;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 
-.Button {
-  display:none;
+.Title {
+  grid-column: 1 / 5;
+  margin-left: 2em;
+  font-size: 0.7em;
+}
+
+.Accueil {
+  grid-column: 8 / 9;
+}
+
+.Contact {
+  grid-column: 9 / 10;
+}
+
+.Projets {
+  grid-column: 10 / 11;
+}
+
+.Accueil, .Contact, .Projets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
-  .Button {
-    display: initial;
+  .Burger {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Title {
+    grid-column: 3 / 11;
+  }
+
+  .Accueil, .Contact, .Projets {
+    display: none;
   }
 }
+

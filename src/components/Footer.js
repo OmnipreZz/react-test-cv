@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import '../scss/components/footer.scss'
 
@@ -12,4 +12,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+export default Footer;

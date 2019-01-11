@@ -1,17 +1,39 @@
 import React, { Component } from 'react';
+import { observer, inject } from 'mobx-react';
+import { Link }  from 'mobx-router';
+
 
 import ToggleButton from './ToggleButton';
 
 import '../scss/components/header.scss';
 
+
+@inject('store', 'routes')
+@observer
 class Header extends Component {
+
   render() {
+
+    const router = this.props.store.router
+    const routes = this.props.routes
+
     return (
       <div className="Header">
-        <h1>logo</h1>
-        <ToggleButton click={this.props.handleMobileClick}/>
-        <h1>search bar</h1>
-        <h1>user</h1>
+        <div className="Burger">
+          <ToggleButton click={this.props.handleMobileClick}/>
+        </div>
+        <div className="Title">
+          <h1>Geoffrey Frioli</h1>
+        </div>
+        <div className="Accueil">
+          <Link view={routes.home} router={router}> Accueil </Link>
+        </div>
+        <div className="Contact">
+          <h3>contact</h3>
+        </div>
+        <div className="Projets">
+          <Link view={routes.project} router={router}> Projets </Link>
+        </div>
       </div>
     )
   }
