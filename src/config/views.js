@@ -15,11 +15,7 @@ const views = {
 
   project: new Route({
     path: '/projet',
-    component: <Project/>,
-    beforeExit: () => {
-      const result = window.confirm('Are you sure you want to leave the gallery?');
-      return result;
-    }
+    component: <Project/>
   })
 
 }

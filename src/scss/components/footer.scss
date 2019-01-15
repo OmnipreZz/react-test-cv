@@ -2,4 +2,14 @@
   grid-area: footer;
   background-color: #292929;
   border-top: 0.125em solid #181818;
+  display: grid;
+  grid-template-columns: 1fr 10em 1em;
+}
+
+.FooterIcon {
+  width: 10em;
+  grid-column: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

@@ -22,17 +22,13 @@ class Header extends Component {
         <div className="Burger">
           <ToggleButton click={this.props.handleMobileClick}/>
         </div>
-        <div className="Title">
+        <div className="HeaderTitle">
           <h1>Geoffrey Frioli</h1>
         </div>
-        <div className="Accueil">
+        <div className="HeaderNav">
           <Link view={routes.home} router={router}> Accueil </Link>
-        </div>
-        <div className="Contact">
-          <h3>contact</h3>
-        </div>
-        <div className="Projets">
           <Link view={routes.project} router={router}> Projets </Link>
+          <h3>contact</h3>
         </div>
       </div>
     )
