@@ -3,7 +3,7 @@ import { Route } from 'mobx-router';
 
 
 import Home from '../components/Home';
-import Project from '../components/Project';
+import Portfolio from '../components/Portfolio';
 
 
 const views = {
@@ -13,9 +13,9 @@ const views = {
     component: <Home />
   }),
 
-  project: new Route({
-    path: '/projet',
-    component: <Project/>
+  portfolio: new Route({
+    path: '/portfolio',
+    component: <Portfolio />
   })
 
 }

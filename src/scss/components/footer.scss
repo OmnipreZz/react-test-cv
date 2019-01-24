@@ -1,15 +1,27 @@
 .Footer {
-  grid-area: footer;
-  background-color: #292929;
-  border-top: 0.125em solid #181818;
+  width: 100vw;
+  height: 1.75em;
+  text-align: left;
+  position: absolute;
+    bottom: 0;
+  background: transparent;
   display: grid;
   grid-template-columns: 1fr 10em 1em;
 }
 
 .FooterIcon {
+  color: #fad390;
   width: 10em;
   grid-column: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.FooterIcon i {
+  cursor: pointer;
+}
+
+.FooterIcon i:hover {
+  color: #6c0000;
 }

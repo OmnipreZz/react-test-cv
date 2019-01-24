@@ -1,12 +1,29 @@
 .AppWrapper{
+  position: fixed;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
-  grid-template-rows: 3.75em auto 2.5em;
+  z-index: 0;
+  background: transparent;
+}
+
+.AppBackground {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background:  url("../images/DSC_0032-2.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -2;
+}
+
+.AppBlur {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background:  #000000;
+  opacity: 0.5;
+  color: grey;
+  filter: blur(5px);
+  z-index: -1;
 }

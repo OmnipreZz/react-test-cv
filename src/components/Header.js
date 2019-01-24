@@ -19,16 +19,23 @@ class Header extends Component {
 
     return (
       <div className="Header">
-        <div className="Burger">
-          <ToggleButton click={this.props.handleMobileClick}/>
-        </div>
         <div className="HeaderTitle">
-          <h1>Geoffrey Frioli</h1>
+            <h1>Geoffrey Frioli</h1>
         </div>
         <div className="HeaderNav">
-          <Link view={routes.home} router={router}> Accueil </Link>
-          <Link view={routes.project} router={router}> Projets </Link>
-          <h3>contact</h3>
+          <Link className="NavLink" view={routes.home} router={router}> Accueil </Link>
+          <div className="NavBorder">
+            <Link className="NavLink" view={routes.portfolio} router={router}> A Propos </Link>
+          </div>
+          <div className="NavBorder">
+            <Link className="NavLink" view={routes.portfolio} router={router}> Portfolio </Link>
+          </div>
+          <div className="NavBorder">
+            <Link className="NavLink" view={routes.home} router={router}> Contact </Link>
+          </div>
+        </div>
+        <div className="Burger">
+          <ToggleButton click={this.props.handleMobileClick}/>
         </div>
       </div>
     )

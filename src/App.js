@@ -46,11 +46,19 @@ class App extends Component {
     return (
       <Provider store={appStore} routes={views}>
         <div className="App AppWrapper">
-          <Header handleMobileClick={this.handleToggleClick} />
-          <MobileNav show={this.state.mobileNavOpen}/>
-          {backdrop}
-          <MobxRouter />
-          <Footer />
+          <div className="AppBackground">
+
+          </div>
+          <div className="AppBlur">
+
+          </div>
+          <div>
+            <Header handleMobileClick={this.handleToggleClick} />
+            <MobileNav show={this.state.mobileNavOpen}/>
+            {backdrop}
+            <MobxRouter />
+            <Footer />
+          </div>  
         </div>
       </Provider>
     );

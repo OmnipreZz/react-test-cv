@@ -1,44 +1,85 @@
 .Header {
+  height: 2.875em;;
+  margin-top: 2em;
   grid-area: header;
-  background-color: green;
+  background: transparent;
   display: grid;
-  grid-template-columns: 15em 1fr 22em 2em;
+  grid-template-columns: 18em 1fr 30em;
+  overflow-x: hidden;
 }
 
 .HeaderTitle {
   grid-column: 1;
-  margin-left: 2em;
-  font-size: 0.7em;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 0.5em;
+  height: 2.875em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fad390;
 }
 
 .HeaderNav {
-  width: 22em;
+  width: 30em;
   grid-column: 3;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-transform: uppercase;
+}
+
+.NavLink {
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.NavBorder {
+  height: 100%;
+  width: 100%;
+  border-left: 0.1em solid #fad390;
+}
+
+.NavLink:hover {
+  font-size: 1.2em;
+  opacity: 1;
+}
+
+.NavLink:active {
+  font-size: 1em;
+  color: #6c0000;
+}
+
+.Burger {
+  display: none;
 }
 
 
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .Header {
-    grid-template-columns: 5em 15em;
-  }
-  .Burger {
-    grid-column: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 3em;
   }
 
   .HeaderTitle {
+    align-items: flex-start;
+  }
+
+  .Burger {
     grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em;
   }
 
   .HeaderNav {
     display: none;
   }
-
 }
 
