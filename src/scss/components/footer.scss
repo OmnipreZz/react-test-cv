@@ -1,20 +1,27 @@
 .Footer {
   width: 100vw;
-  height: 1.75em;
+  height: 2.75em;
   text-align: left;
   position: absolute;
-    bottom: 0;
+  bottom: 0;
   background: transparent;
   display: grid;
-  grid-template-columns: 1fr 10em 1em;
+  grid-template-columns: 1fr 12em 1em;
 }
 
 .FooterIcon {
   color: #fad390;
-  width: 10em;
+  width: 12em;
   grid-column: 2;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.OneIcon {
+  width: 3em;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -24,4 +31,10 @@
 
 .FooterIcon i:hover {
   color: #6c0000;
+  font-size: 1.75em;
+}
+
+.FooterIcon i:active {
+  color: #fad390;
+  font-size: 1em;
 }
